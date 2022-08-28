@@ -8,6 +8,7 @@ package com.grp.connect.games.sudoku;
  * @author Gaurav Rajapurkar
  *
  */
+
 public class SimpleSudokuSolver {
 
 	// sudoku box size

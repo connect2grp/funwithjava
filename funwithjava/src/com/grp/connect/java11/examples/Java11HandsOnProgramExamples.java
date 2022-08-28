@@ -19,6 +19,12 @@ import java.util.function.Consumer;
 import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
 
+/**
+ * This class presents Java 11 features and hands on examples.
+ * 
+ * @author Gaurav Rajapurkar
+ *
+ */
 public class Java11HandsOnProgramExamples {
 
 	private static final HttpClient httpClient = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2)
