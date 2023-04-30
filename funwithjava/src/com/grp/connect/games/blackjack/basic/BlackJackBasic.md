@@ -10,7 +10,6 @@ Players can continue to hit until they either choose to stand, or their hand exc
 Once all players have completed their turns, the dealer reveals their face-down card and hits until they have a hand of 17 or more. If the dealer's hand exceeds 21, all remaining players win. Otherwise, the player with the hand closest to 21 without going over wins.
 There are also some additional rules that can come into play in certain situations, such as splitting pairs, doubling down, or taking insurance. However, these rules can vary depending on the specific version of Blackjack being played, so it's always a good idea to familiarize yourself with the rules of the game you'll be playing before getting started.
 
-
 Using above rules , We will now write a Java program that simulates a 2 player game of Blackjack using the rules we discussed earlier. Here is a basic outline of how you could structure your program:
 
 Create a deck of cards by initializing an array or ArrayList of all 52 cards. Each card should have a suit and a value.
