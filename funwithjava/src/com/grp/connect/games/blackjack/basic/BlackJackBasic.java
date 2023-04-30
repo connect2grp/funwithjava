@@ -2,6 +2,7 @@ package com.grp.connect.games.blackjack.basic;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class BlackJackBasic {
@@ -110,7 +111,7 @@ public class BlackJackBasic {
 		return deck;
 	}
 
-	public static int calculateHandTotal(ArrayList<String> hand) {
+	public static int calculateHandTotal(List<String> hand) {
 		int total = 0;
 		int numAces = 0;
 
