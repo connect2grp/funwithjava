@@ -6,29 +6,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class BlackJackBasic {
-
-	public static void main(String[] args) {
+	
+	
+	public static void playGame(ArrayList<String> playerHand, ArrayList<String> dealerHand,ArrayList<String> deck ) {
+		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Welcome to Blackjack!");
-
-		// Create a deck of cards
-		ArrayList<String> deck = createDeck();
-		Collections.shuffle(deck);
-
-		// Initialize player and dealer hands
-		ArrayList<String> playerHand = new ArrayList<>();
-		ArrayList<String> dealerHand = new ArrayList<>();
-
-		// Deal two cards to each player
-		playerHand.add(deck.remove(0));
-		dealerHand.add(deck.remove(0));
-		playerHand.add(deck.remove(0));
-		dealerHand.add(deck.remove(0));
-
-		// Display hands and prompt player to hit or stand
-		System.out.println("Your hand: " + playerHand);
-		System.out.println("Dealer's hand: [" + dealerHand.get(0) + ", **]");
-
 		boolean playerBust = false;
 		boolean dealerBust = false;
 
@@ -97,6 +79,29 @@ public class BlackJackBasic {
 		sc.close();
 	}
 
+	public static void main(String[] args) {
+		System.out.println("Welcome to Blackjack!");
+
+		// Create a deck of cards
+		ArrayList<String> deck = createDeck();
+		Collections.shuffle(deck);
+
+		// Initialize player and dealer hands
+		ArrayList<String> playerHand = new ArrayList<>();
+		ArrayList<String> dealerHand = new ArrayList<>();
+
+		// Deal two cards to each player
+		playerHand.add(deck.remove(0));
+		dealerHand.add(deck.remove(0));
+		playerHand.add(deck.remove(0));
+		dealerHand.add(deck.remove(0));
+
+		// Display hands and prompt player to hit or stand
+		System.out.println("Your hand: " + playerHand);
+		System.out.println("Dealer's hand: [" + dealerHand.get(0) + ", **]");
+		playGame(playerHand, dealerHand, deck);
+	}
+
 	public static ArrayList<String> createDeck() {
 		ArrayList<String> deck = new ArrayList<>();
 		String[] suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
@@ -134,4 +139,6 @@ public class BlackJackBasic {
 
 		return total;
 	}
+
+	
 }
